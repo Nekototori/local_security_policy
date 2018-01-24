@@ -1,13 +1,13 @@
 require File.join(File.dirname(__FILE__), 'powershell_version')
 
 module PuppetX
-  module PuppetLabs
-    module PowerShell
+  module Policies
+    module Local_security_policy
       class CompatiblePowerShellVersion
         def self.compatible_version?
           value = false
 
-          powershell_version = PuppetX::PuppetLabs::PowerShell::PowerShellVersion.version
+          powershell_version = PuppetX::Policies::Local_security_policy::PowerShellVersion.version
 
           return false if powershell_version.nil?
 

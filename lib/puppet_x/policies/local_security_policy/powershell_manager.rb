@@ -5,7 +5,7 @@ require 'base64'
 require File.join(File.dirname(__FILE__), 'compatible_powershell_version')
 
 module PuppetX
-  module PowerShell
+  module Local_security_policy
     class PowerShellManager
       @@instances = {}
 
